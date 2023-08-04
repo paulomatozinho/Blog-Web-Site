@@ -1,4 +1,9 @@
 // Grab elements
+const selectElemento = selector => {
+    const element = document.querySelector(selector)
+    if (element) return element;
+    throw new Error(`Algo de errado, verifique se ${selector} existe ou se foi digitado corretamente.`);
+};
 
 //Nav styles on scroll
 
